@@ -7,7 +7,7 @@
 [node name="Level 1" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 155, 105 )
+position = Vector2( 148, 97 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 400, 400 )
@@ -21,6 +21,9 @@ tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 1, 131075, 0, 1, 131076, 0, 1
 [node name="Player" parent="TileMap" instance=ExtResource( 3 )]
 position = Vector2( 153, 55 )
 
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="TileMap/Player"]
+remote_path = NodePath("../../../Camera2D")
+
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 170, 59 )
+position = Vector2( 153, 55 )
 current = true

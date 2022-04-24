@@ -16,5 +16,5 @@ func _ready():
 #	pass
 
 
-func _on_Player_changed_state(new_state):
-	self.text = str(new_state)
+func _on_Player_changed_state(new_state_str, new_state_id):
+	self.text = new_state_str
